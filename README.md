@@ -11,7 +11,7 @@
 5. [Conclusions](#conclusions)
 6. [Manual d’Instal·lació](#manual-dinstal·lació)
 
-7. ## Introducció
+## Introducció
 En aquesta pràctica hem desenvolupat una aplicació web a partir d'una API Web creada en entregues anteriors. L’objectiu principal és construir una plataforma web que permeti als usuaris explorar i llogar videojocs disponibles.
 
 L’aplicació consta de dues parts: una pública i una altra privada. La part pública és accessible per a tothom i la part privada només per als usuaris registrats. Els usuaris poden explorar una llista de videojocs disponibles. Quan se selecciona un videojoc, es mostra informació com la seva localització, preu, tipus, descripció, etc.
