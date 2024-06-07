@@ -1,0 +1,111 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 ene 2024, 0:35:04
+    Author     : polpu
+*/
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF; /* Cambia el color de fondo del cuerpo */
+    }
+
+        /* Estilos para el contenedor de los juegos */
+    #carritoLista {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila */
+        gap: 20px;
+        justify-content: center; /* Centra horizontalmente los elementos */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px; /* Agregado para dar un poco de espacio alrededor de los juegos */
+        box-sizing: border-box;
+    }
+
+    .game {
+        border: 1px solid #000;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px; /* Espaciado entre juegos */
+        background-color: #fff;
+        transition: box-shadow 0.3s; /* Agrega transición para suavizar el cambio de sombra */
+    }
+
+    .game:hover {
+        box-shadow: 0 8px 16px rgba(228, 77, 38, 0.3); /* Sombra naranja al pasar el cursor */
+        transform: translateY(-5px);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .game-image {
+        width: 200px; /* Establece el ancho deseado */
+        height: 100px; /* Permite que la altura se ajuste automáticamente */
+        object-fit: cover; 
+    }
+
+    .availability-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .eliminarJuegoBtn {
+        background-color: #f44336; /* Rojo */
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .eliminarJuegoBtn:hover {
+        background-color: #d32f2f; 
+    }
+
+
+    #btnFinalizarCompra{
+        background-color: #4CAF50; /* Rojo */
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 60px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #btnFinalizarCompra:hover {
+        background-color: #45a049;
+    }
+       
+    .boto {
+        position: fixed;
+        bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+        left: 50%; /* Centra horizontalmente el botón respecto al lado izquierdo */
+        transform: translateX(-50%); /* Centra correctamente el botón */
+        background-color: #007BFF; /* Color de fondo del botón */
+        color: #fff; /* Color del texto del botón */
+        padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .boto:hover {
+        background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+    }

@@ -1,0 +1,185 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 ene 2024, 23:12:22
+    Author     : douni
+*/
+
+
+    /* Estilos para la fuente */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+       font-family: 'Roboto', sans-serif;
+       line-height: 1.6;
+       margin: 0;
+       padding: 0;
+       background-color: #FFFFFF; /* Cambia el color de fondo del cuerpo a granate */
+   }
+    
+    .encabezado-izquierdo {
+        width: 100px; /* Ajusta el ancho según tus necesidades */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción original */
+        margin-right: 20px; /* Ajusta el margen según tu diseño */
+        display: inline-block; /* Permite alinear la imagen y el título horizontalmente */
+        vertical-align: middle; /* Alinea verticalmente con el centro del contenedor */
+    }
+    
+    h1 {
+        text-align: center;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 20px;
+    }
+    
+    .price {
+        font-weight: bold; /* O cualquier otro estilo que desees aplicar */
+    }
+    
+    /* Estilos para el contenedor de los juegos */
+    #Joc {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila */
+        gap: 20px;
+        justify-content: center; /* Centra horizontalmente los elementos */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px; /* Agregado para dar un poco de espacio alrededor de los juegos */
+        box-sizing: border-box;
+    }
+
+    .game {
+        border: 1px solid #000;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px; /* Espaciado entre juegos */
+        background-color: #fff;
+        transition: box-shadow 0.3s; /* Agrega transición para suavizar el cambio de sombra */
+    }
+    
+    .game:hover {
+        box-shadow: 0 8px 16px rgba(228, 77, 38, 0.3); /* Sombra naranja al pasar el cursor */
+        transform: translateY(-5px);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .game-image {
+        width: 200px; /* Establece el ancho deseado */
+        height: 100px; /* Permite que la altura se ajuste automáticamente */
+        object-fit: cover; 
+    }
+    
+    .availability-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #2ecc71; /* Color verde */
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+        
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        position: fixed;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+´
+
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    #btnIniciarSesionContainer {
+        display: flex;
+        flex-direction: column; /* Cambio para que los elementos estén en columna */
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    #btnIniciarSesion1 {
+        background-color: #800000;
+        color: #FFFFFF;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px; /* Agregado un espacio entre los botones */
+
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+
+    #btnIniciarSesion1:hover {
+        background-color: #45a049;
+    }
+    
+    #btnCerrarSesion {
+        background-color: #800000;
+        color: #FFFFFF;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px; /* Agregado un espacio entre los botones */
+        position: absolute;
+        right: 10px;
+        top: 40px;
+    }
+
+    #btnCerrarSesion:hover {
+        background-color: #45a049;
+    }
+
+    .nombre-usuario-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 24px;
+            background-color: white; /* Opcional: añade un fondo blanco para que el texto sea más legible */
+        }
+
+    #btnVerCarrito{
+        text-align: right; 
+        padding: 10px 15px;
+        display:none;
+        position: absolute;
+        top: 50px; 
+    }
+    
+    #btnVerCarrito:hover {
+        background-color: #45a049;
+    }
+        
+ /* Estilo para el contenedor del nombre de usuario */
+    #nombreUsuario {
+        text-align: right; /* Alinea el texto a la derecha */
+        font-size: 18px; /* Tamaño de fuente */
+        margin-top: 20px; /* Espacio superior */
+        margin-right: 20px; /* Margen derecho para alejarlo del borde */
+        margin-left: 5px; /* Margen izquierdo para ajustar la posición */
+        color: #333; /* Color del texto */
+        font-weight: bold; /* Texto en negrita */
+    }

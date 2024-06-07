@@ -1,0 +1,149 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 ene 2024, 17:01:36
+    Author     : douni
+*/
+/* Estilos para la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Establece el 100% de la altura de la ventana gráfica (viewport height) como mínimo */
+}
+
+/* Estilos para el contenedor del detalle del juego */
+div {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border: 2px solid #000000;
+}
+
+.game-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.game-image-container {
+    object-fit: cover; 
+    margin-right: 20px;
+    text-align: center; 
+}
+
+.game-image {
+    width: 300px; /* Establece el ancho deseado */
+    height: 200px; /* Permite que la altura se ajuste automáticamente */
+    object-fit: cover; 
+}
+
+.game-details {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4285f4;
+}
+
+h2 {
+    background-color: #fff; 
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.boto {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    left: 50%; /* Centra horizontalmente el botón respecto al lado izquierdo */
+    transform: translateX(-50%); /* Centra correctamente el botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boto:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+
+ .availability-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #4CAF50; /* Color verde */
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    
+    #btnVerCarrito{
+        position: fixed;
+        bottom: 60px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+        left: 50%; /* Centra horizontalmente el botón respecto al lado izquierdo */
+        transform: translateX(-50%); /* Centra correctamente el botón */
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #btnVerCarrito:hover {
+        background-color: #45a049;
+    }
