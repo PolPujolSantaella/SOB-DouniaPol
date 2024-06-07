@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 ene 2024, 19:23:53
+    Author     : douni
+*/
+
+/* Exemple d'estils CSS bàsics */
+
+/* Estils per a tot el cos de la pàgina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estils per als encapçalats */
+h1, h2, h3 {
+    color: #007bff;
+}
+
+/* Estils per als enllaços */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Estils per als botons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estils per als formularis */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,87 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 feb 2024, 18:51:33
+    Author     : polpu
+*/
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Establece el alto al 100% de la ventana */
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centra el contenido */
+        }
+
+        #btnConfirmarLloguer {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: green; /* Cambia el color del botón a verde */
+            color: #fff; /* Cambia el color del texto del botón a blanco */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #btnConfirmarLloguer:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .tic {
+            color: green;
+        }
+
+        .cross {
+            color: red;
+        }
+        
+        #btnTornaLlistatJocs{
+            position: fixed;
+            bottom: 10px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+            left: 50%; /* Centra horizontalmente el botón respecto al lado izquierdo */
+            transform: translateX(-50%); /* Centra correctamente el botón */
+            background-color: #007BFF; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Estilo para la respuesta */
+        #responseContainer {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        #responseContainer p {
+            margin: 5px 0;
+        }
+
+        #responseContainer strong {
+            color: green; /* Cambia el color del texto a verde */
+        }
